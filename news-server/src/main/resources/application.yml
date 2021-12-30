@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/news
+    username: root
+    password: 123456
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 10MB
+mybatis:
+  type-aliases-package: com.ans20xx.newsserver.DO
+  configuration:
+    map-underscore-to-camel-case: true
+
+jwt:
+  header: "Authorization"
+  secret: "afee450f5efs3fefesgegsdfwegesfegewseegfeefr83rowue9ur39390r3ois989ru3hsh8y378ewofr83rowue9ur39390r3"
+  expiratin: 604800
+  tokenHead: "ans20xx "
+
+ansimg:
+  url: "http://localhost:8080"
