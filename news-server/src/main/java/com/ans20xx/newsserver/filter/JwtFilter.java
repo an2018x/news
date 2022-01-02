@@ -11,10 +11,6 @@ import org.springframework.web.servlet.HandlerInterceptor;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * @Author: miansen
- * @Date: 2018/11/17 13:27
- */
 @Component
 public class JwtFilter implements HandlerInterceptor {
 

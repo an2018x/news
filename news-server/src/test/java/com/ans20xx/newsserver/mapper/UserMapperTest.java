@@ -28,7 +28,7 @@ public class UserMapperTest {
     @Test
     public void testSelectUserById() {
         UserDO userDO = userMapper.selectUserById(1);
-        Assert.assertEquals("test1", userDO.getUserName());
+        Assert.assertEquals("admin", userDO.getUserName());
     }
 
     @Test
@@ -36,6 +36,5 @@ public class UserMapperTest {
         int num = userMapper.selectTotal();
         System.out.println(num);
     }
-
 
 }
