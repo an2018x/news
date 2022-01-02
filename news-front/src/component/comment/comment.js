@@ -57,7 +57,7 @@ export default function NewsComment(props) {
                 headers: { "Content-Type": "application/json" }
             };
             axios.post("/listComment", props.articleId, config).then(res=>{
-                console.log(res);
+                // console.log(res);
 
                 setCommentList(res.data.data.commentList);
             });
@@ -67,15 +67,15 @@ export default function NewsComment(props) {
     
 
     const handleClick = () => {
-        console.log(props)
+        // console.log(props)
         let param = {
             "commentAuthor": localStorage.getItem("username"),
             "commentArticle": props.articleId,
             "commentContent": value,
         }
-        console.log(param)
+        // console.log(param)
         axios.post("/comment", param).then(res=>{
-            console.log(res);
+            // console.log(res);
           });
           window.location.reload()
       }

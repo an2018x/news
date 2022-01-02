@@ -111,7 +111,7 @@ class Editormd extends Component {
             "articleContent": this.state.value,
             "articleHeadImage": this.headImageUrl
         }
-        console.log(object)
+        // console.log(object)
         axios.post("/edit", object).then(res => {
             this.setState({open: true})
         });
@@ -143,7 +143,7 @@ class Editormd extends Component {
         return (
             <>
                 <Navbar />
-                
+                {localStorage.getItem("username")!=null?
                 <Paper className={this.props.classes.paper}>
                     <form className={this.props.classes.editormargin} noValidate>
                         <Typography component="h1" variant="h3" align="center" className={this.props.classes.pfront}>
@@ -203,7 +203,7 @@ class Editormd extends Component {
                         </Snackbar>
                         
                     </form>
-                </Paper>
+                </Paper>:<h1> 你没有权限访问，请先登录</h1> }
 
             </>
         )

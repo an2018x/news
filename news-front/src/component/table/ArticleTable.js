@@ -156,7 +156,7 @@ const EnhancedTableToolbar = (props) => {
 
 
   const handleClick = (e) => {
-    console.log(props);
+    // console.log(props);
     axios.post("/deleteArticles", props.selected).then(res=>{
         window.location.reload();
     });
@@ -283,7 +283,7 @@ export default function EnhancedTable() {
     }
 
     setSelected(newSelected);
-    console.log(newSelected);
+    // console.log(newSelected);
   };
 
   const handleChangePage = (event, newPage) => {

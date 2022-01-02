@@ -98,7 +98,7 @@ export default function LoginForm() {
     }
 
     axios.post("/login",object).then(res => {
-      console.log(res);
+      // console.log(res);
 
       if( res.data.code != 200) {
         if (res.data.info == "用户不存在"){
@@ -126,7 +126,7 @@ export default function LoginForm() {
 
 
     });
-    console.log(usernameRef.current.value, passwordRef.current.value);
+    // console.log(usernameRef.current.value, passwordRef.current.value);
   }
 
   const classes = useStyles();

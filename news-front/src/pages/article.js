@@ -91,10 +91,10 @@ function Article() {
 
 
     useEffect(() => {
-        console.log(classes.hero);
+        // console.log(classes.hero);
         
         if(title == '') {
-            console.log(param.id);
+            // console.log(param.id);
             const config = {
                 headers: { "Content-Type": "application/json" }
             };

@@ -65,7 +65,7 @@ function Navbar() {
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   const username = localStorage.getItem("username");
   const role = localStorage.getItem("role");
-  console.log(role);
+  // console.log(role);
 
   const handleClick = () => {
     localStorage.removeItem("username");
